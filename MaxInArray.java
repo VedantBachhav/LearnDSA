@@ -20,9 +20,16 @@ public class MaxInArray {
 //    }
 //}
 
-//    also solved using start and end value of array for specific portion.
+//    also solved using start and end value of array for specific portion. like edge portion.
 
     static int max(int [] arr, int start, int end) {
+        if(end > start){
+            return -1;
+
+        }
+        if(arr==null){
+            return -1;
+        }
         int maxVal = arr[0];
         for (int i=start; i<=end; i++){
             if(arr[i] > maxVal){
