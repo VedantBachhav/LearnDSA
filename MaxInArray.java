@@ -20,7 +20,7 @@ public class MaxInArray {
 //    }
 //}
 
-//    also solved using start and end value of array.
+//    also solved using start and end value of array for specific portion.
 
     static int max(int [] arr, int start, int end) {
         int maxVal = arr[0];
