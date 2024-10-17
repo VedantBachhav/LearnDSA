@@ -4,10 +4,10 @@ public class SearchInRotatedArray {
 
     public static void main(String[] args) {
         int[] arr = {4, 5, 6, 7, 0, 1, 2};
-        int target = 0;
+        int target = 6;
         int pivot = pivotSearch(arr);
 
-//        three cases for serch element in rotate array.
+//        three cases for serch elemen in rotate array.
 
 //        case 1 : If array is not rotated.
         if (pivot == -1) {
@@ -19,7 +19,7 @@ public class SearchInRotatedArray {
         }
 //        case 3 : if pivot is no t equal to target then search  2 asc array
 //         case 3.1 : search in before pivot element means left side of ascending array.
-        if(target>=arr[0]) {
+        if(target>arr[0]) {
             System.out.println(binarySearch(arr, 0, pivot - 1, target));
         }
 //         case 3.2 : search in 2 asc array that is after pivot element means right ascending array.
